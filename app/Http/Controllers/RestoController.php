@@ -41,7 +41,7 @@ class RestoController extends Controller
     }
     function update(Request $req)
     {
-        $resto = Restaurant::find($req->input('id'));
+        $resto = Restaurant::find($req->input('i'));
         $resto->name = $req->input('name');
         $resto->email = $req->input('email');
         $resto->review = $req->input('review');
